@@ -1,6 +1,7 @@
 import React from "react";
 import { Bar, Line, Pie } from "react-chartjs-2";
 import "chart.js/auto";
+import ReactMarkdown from "react-markdown";
 
 export default function ReportsAndAnalytics() {
   return (
@@ -15,7 +16,6 @@ export default function ReportsAndAnalytics() {
 
         {/* Grid Layout for Charts */}
         <div className="grid md:grid-cols-2 gap-8">
-
           {/* Cases Resolved vs Reported (Bar Chart) */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-bold mb-4">Cases Resolved vs Reported (2021-2024)</h3>
@@ -104,18 +104,21 @@ export default function ReportsAndAnalytics() {
               options={{ responsive: true }}
             />
           </div>
-
         </div>
 
-        {/* Summary Section */}
+        {/* Government Initiatives & Impact Section */}
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-bold mb-4">Government Initiatives & Impact</h3>
-          <p className="text-lg opacity-80 mb-6">
-            The Indian Government has actively implemented cybersecurity measures, leading to a **remarkable 80% case resolution rate** and increased awareness campaigns, significantly reducing cyber threats nationwide.
-          </p>
-          <p className="text-lg opacity-80">
-            With **advanced AI-driven investigation tools, dedicated cyber cells, and public awareness programs**, India is at the forefront of the battle against cybercrimes.
-          </p>
+          <div className="text-lg opacity-80 mb-6">
+            <ReactMarkdown>
+              {`The Indian Government has actively implemented cybersecurity measures, 
+              leading to a **remarkable 80% case resolution rate** and increased awareness campaigns, 
+              significantly reducing cyber threats nationwide.
+
+              With advanced AI-driven investigation tools, dedicated cyber cells, and public awareness programs, 
+              India is at the forefront of the battle against cybercrimes.`}
+            </ReactMarkdown>
+          </div>
         </div>
       </div>
     </div>

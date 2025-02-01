@@ -52,13 +52,13 @@ export default function PreHeader() {
       {/* Right Icons - Dark Mode Toggle & Language Select */}
       <div className="flex items-center gap-4 ml-auto relative">
         {/* Dark Mode Toggle */}
-        <button 
+        {/* <button 
           onClick={() => setDarkMode(!darkMode)} 
           className="p-2 rounded-full hover:bg-white/20"
           aria-label="Toggle dark mode"
         >
           {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-        </button>
+        </button> */}
 
         {/* Language Dropdown */}
         <div 

@@ -14,9 +14,7 @@ export default function Navbar() {
     { name: "Home", path: "/", icon: <Home className="w-5 h-5" /> },
     { name: "File a Complaint", path: "/file-complaint" },
     { name: "Cybercrime Awareness", path: "/cybercrime-awareness" },
-    { name: "Resources & Laws", path: "/resources" },
-    { name: "Contact & Helpline", path: "/contact" },
-    { name: "Dashboard", path: "/dashboard" },
+    { name: "Contact & Helpline", path: "/contact-helpline" },
     { name: "Reports & Analytics", path: "/reports" },
   ];
 
