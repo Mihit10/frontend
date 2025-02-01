@@ -1,35 +1,20 @@
-import './App.css';
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Hello from './components/Hello';
-import Bye from './components/Bye';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PreHeader from "./PreHeader";
+import Header from "./Header"; 
+import Home from "./pages/Home"; 
 
 function App() {
-
-
-
   return (
-    <>
-    <BrowserRouter>
-      <RoutesWeb />
-    </BrowserRouter>
-    </>
+    <Router>
+      <PreHeader /> {/* PreHeader stays visible on all pages */}
+      <Header />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
-
-const RoutesWeb = () => {
-  const location = useLocation(); // Get the current route
-
-  return (
-      <>
-      {/* {loading && <Loader />} */}
-      <Routes>
-        <Route path="/" element={<Hello />} />
-        <Route path="/bye" element={<Bye />} />
-      </Routes>
-      {/* {!isAdminRoute && <Footer />}       Conditionally render Footer */}
-      </>
-  );
-};
 
 export default App;
