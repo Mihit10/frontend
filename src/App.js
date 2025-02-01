@@ -4,6 +4,7 @@ import PreHeader from "./PreHeader";
 import Header from "./Header"; 
 import Navbar from "./Navbar";
 import Home from "./pages/Home"; 
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
