@@ -13,8 +13,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "/", icon: <Home className="w-5 h-5" /> },
     { name: "File a Complaint", path: "/file-complaint" },
-    { name: "Track Complaint", path: "/track-complaint" },
-    { name: "Cybercrime Awareness", path: "/awareness" },
+    { name: "Cybercrime Awareness", path: "/cybercrime-awareness" },
     { name: "Resources & Laws", path: "/resources" },
     { name: "Contact & Helpline", path: "/contact" },
     { name: "Dashboard", path: "/dashboard" },

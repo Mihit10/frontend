@@ -5,6 +5,9 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import Home from "./pages/Home"; 
 import Footer from "./Footer";
+import FileComplaint from "./pages/FileComplaint";
+import CybercrimeAwareness from "./pages/CybercrimeAwareness";
+import ReportsAndAnalytics from "./pages/ReportsAndAnalytics";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/file-complaint" element={<FileComplaint />} />
+        <Route path="/cybercrime-awareness" element={<CybercrimeAwareness />} />
+        <Route path="/reports" element={<ReportsAndAnalytics />} />
       </Routes>
       <Footer />
     </Router>
